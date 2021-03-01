@@ -1,4 +1,4 @@
-error: look here
+error: oops
  --> $DIR/generics.rs:4:11
   |
 4 | struct Foo<T> {
