@@ -1,6 +1,5 @@
 name: cargo-test
-on:
-  push: [main]
+on: [push, workflow_dispatch]
 jobs:
   test:
     strategy:
