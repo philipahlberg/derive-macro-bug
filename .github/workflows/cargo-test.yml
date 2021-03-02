@@ -16,3 +16,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: rustup show
       - run: rustup default stable-i686-pc-windows-msvc 
+      - run: cargo test --verbose --test main
