@@ -8,4 +8,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
+      - run: rustup show
       - run: cargo test --verbose --test main
+  test-32bit:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: rustup show
+      - run: rustup default stable-i686-pc-windows-msvc 
